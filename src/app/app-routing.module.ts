@@ -8,6 +8,18 @@ const routes: Routes = [
     path: 'radio',
     loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
   },
+  {
+    path: 'comision',
+    loadChildren: () => import('./comision/comision.module').then( m => m.ComisionPageModule)
+  },
+  {
+    path: 'talleres',
+    loadChildren: () => import('./talleres/talleres.module').then( m => m.TalleresPageModule)
+  },
+  {
+    path: 'novedades',
+    loadChildren: () => import('./novedades/novedades.module').then( m => m.NovedadesPageModule)
+  },
 ];
 
 @NgModule({
